@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Postres</title>
+<link rel="icon" href="minilogo.png">
+</head>
+
+<!-- LOGO-->
+<header>
+    <center><img src="logodepostres.png" widht="320 px" height="320 px"></center>
+	
+</header>
+
+<body>
+  <style>
+    body{
+  background-color:#faef8e;
+}
+header{
+  background-color:white;
+  position:right:20px top: padding: ;;;
+}
+
+.card:hover {
+	border: none;
+	box-shadow: 0 0 40px 0 rgb(224, 187, 74);
+}
+  </style>
+    <!-- PROPAGANDA -->
+    <center>		
+        <font size="20"color="#f4f4c2">
+          <b><marquee behaviour="alternare"bgcolor="#e8c59d"height="70">POSTRES</marquee></b></font>
+          <font size="2px">
+          </font>
+          </center>
+
+<!-- GALERIA -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Variables
+            const baseDeDatos = [
+                {
+                    id: 1,
+                    nombre: 'Crepa con fresas',
+                    precio: 65,
+                    imagen: 'crepa.png'
+                },
+                {
+                    id: 2,
+                    nombre: 'Crepa con frambuesas',
+                    precio: 68,
+                    imagen: 'crepa2.png'
+                },
+                {
+                    id: 3,
+                    nombre: 'Crepa con fresas y platano',
+                    precio: 70,
+                    imagen: 'crepa3.png'
+                },
+                {
+                    id: 4,
+                    nombre: 'Flan bañado en caramelo',
+                    precio: 60,
+                    imagen: 'flan.png'
+                },
+                {
+                    id: 5,
+                    nombre: 'Flan con una cereza',
+                    precio: 45,
+                    imagen: 'flan1.png'
+                },
+				{
+                    id: 6,
+                    nombre: 'Flan sencillo',
+                    precio: 45,
+                    imagen: 'flan3.png'
+                },
+				{
+                    id: 7,
+                    nombre: 'Flan sencillo con caramelo',
+                    precio: 55,
+                    imagen: 'flan5.png'
+                },
+				{
+                    id: 8,
+                    nombre: 'Hotcakes con moras azules',
+                    precio: 85,
+                    imagen: 'hotcake.png'
+                },
+				{
+                    id: 9,
+                    nombre: 'Hotcake sencillo',
+                    precio: 60,
+                    imagen: 'hotcake1.png'
+                },
+				{
+                    id: 10,
+                    nombre: 'Hotcake sencillo con mantequilla',
+                    precio: 70,
+                    imagen: 'hotcake2.png'
+                },
+				{
+                    id: 11,
+                    nombre: 'Hotcake con fresas',
+                    precio: 85,
+                    imagen: 'hotcake3.png'
+                },
+				{
+                    id: 12,
+                    nombre: 'Hotcake relleno',
+                    precio: 80,
+                    imagen: 'hotcake4.png'
+                },
+				{
+                    id: 13,
+                    nombre: 'Hotcake sencillo con miel',
+                    precio: 65,
+                    imagen: 'hotcake5.png'
+                },
+				{
+                    id: 14,
+                    nombre: 'Pastel de chocolate',
+                    precio: 320,
+                    imagen: 'pastel.png'
+                },
+				{
+                    id: 15,
+                    nombre: 'Pastel de limon',
+                    precio: 70,
+                    imagen: 'pastel2.png'
+                },
+				{
+                    id: 16,
+                    nombre: 'Pastel de chocolate',
+                    precio: 65,
+                    imagen: 'pastel3.png'
+                },
+				{
+                    id: 17,
+                    nombre: 'Pastel de fresas',
+                    precio: 560,
+                    imagen: 'pastel4.png'
+                },
+				{
+                    id: 18,
+                    nombre: 'Pastel sencillo de vainilla',
+                    precio: 65,
+                    imagen: 'pastel5.png'
+                },
+				{
+                    id: 19,
+                    nombre: 'Waffle preparado',
+                    precio: 90,
+                    imagen: 'waffle.png'
+                },
+				{
+                    id: 20,
+                    nombre: 'Waffle de corazon',
+                    precio: 65,
+                    imagen: 'waffle3.png'
+                },
+				{
+                    id: 21,
+                    nombre: 'Waffle sencillo',
+                    precio: 60,
+                    imagen: 'waffle4.png'
+                },
+				{
+                    id: 22,
+                    nombre: 'Waffle de chocolate',
+                    precio: 60,
+                    imagen: 'waffle5.png'
+                },
+				{
+                    id: 23,
+                    nombre: 'Pay sencillo',
+                    precio: 250,
+                    imagen: 'pay.png'
+                }
+
+            ];
+
+            let carrito = [];
+            const divisa = '$';
+            const DOMitems = document.querySelector('#items');
+            const DOMcarrito = document.querySelector('#carrito');
+            const DOMtotal = document.querySelector('#total');
+            const DOMbotonVaciar = document.querySelector('#boton-vaciar');
+            const miLocalStorage = window.localStorage;
+
+            // Funciones
+
+            /**
+            * Dibuja todos los productos a partir de la base de datos. No confundir con el carrito
+            */
+            function renderizarProductos() {
+                baseDeDatos.forEach((info) => {
+                    // Estructura
+                    const miNodo = document.createElement('div');
+                    miNodo.classList.add('card', 'col-sm-4');
+                    // Body
+                    const miNodoCardBody = document.createElement('div');
+                    miNodoCardBody.classList.add('card-body');
+                    // Titulo
+                    const miNodoTitle = document.createElement('h5');
+                    miNodoTitle.classList.add('card-title');
+                    miNodoTitle.textContent = info.nombre;
+                    // Imagen
+                    const miNodoImagen = document.createElement('img');
+                    miNodoImagen.classList.add('img-fluid');
+                    miNodoImagen.setAttribute('src', info.imagen);
+                    // Precio
+                    const miNodoPrecio = document.createElement('p');
+                    miNodoPrecio.classList.add('card-text');
+                    miNodoPrecio.textContent = `${info.precio}${divisa}`;
+                    // Boton
+                    const miNodoBoton = document.createElement('button');
+                    miNodoBoton.classList.add('btn', 'btn-primary');
+                    miNodoBoton.textContent = '+';
+                    miNodoBoton.setAttribute('marcador', info.id);
+                    miNodoBoton.addEventListener('click', anyadirProductoAlCarrito);
+                    // Insertamos
+                    miNodoCardBody.appendChild(miNodoImagen);
+                    miNodoCardBody.appendChild(miNodoTitle);
+                    miNodoCardBody.appendChild(miNodoPrecio);
+                    miNodoCardBody.appendChild(miNodoBoton);
+                    miNodo.appendChild(miNodoCardBody);
+                    DOMitems.appendChild(miNodo);
+                });
+            }
+
+            /**
+            * Evento para añadir un producto al carrito de la compra
+            */
+            function anyadirProductoAlCarrito(evento) {
+                // Anyadimos el Nodo a nuestro carrito
+                carrito.push(evento.target.getAttribute('marcador'))
+                // Actualizamos el carrito
+                renderizarCarrito();
+                // Actualizamos el LocalStorage
+                guardarCarritoEnLocalStorage();
+            }
+
+            /**
+            * Dibuja todos los productos guardados en el carrito
+            */
+            function renderizarCarrito() {
+                // Vaciamos todo el html
+                DOMcarrito.textContent = '';
+                // Quitamos los duplicados
+                const carritoSinDuplicados = [...new Set(carrito)];
+                // Generamos los Nodos a partir de carrito
+                carritoSinDuplicados.forEach((item) => {
+                    // Obtenemos el item que necesitamos de la variable base de datos
+                    const miItem = baseDeDatos.filter((itemBaseDatos) => {
+                        // ¿Coincide las id? Solo puede existir un caso
+                        return itemBaseDatos.id === parseInt(item);
+                    });
+                    // Cuenta el número de veces que se repite el producto
+                    const numeroUnidadesItem = carrito.reduce((total, itemId) => {
+                        // ¿Coincide las id? Incremento el contador, en caso contrario no mantengo
+                        return itemId === item ? total += 1 : total;
+                    }, 0);
+                    // Creamos el nodo del item del carrito
+                    const miNodo = document.createElement('li');
+                    miNodo.classList.add('list-group-item', 'text-right', 'mx-2');
+                    miNodo.textContent = `${numeroUnidadesItem} x ${miItem[0].nombre} - ${miItem[0].precio}${divisa}`;
+                    // Boton de borrar
+                    const miBoton = document.createElement('button');
+                    miBoton.classList.add('btn', 'btn-danger', 'mx-5');
+                    miBoton.textContent = 'X';
+                    miBoton.style.marginLeft = '1rem';
+                    miBoton.dataset.item = item;
+                    miBoton.addEventListener('click', borrarItemCarrito);
+                    // Mezclamos nodos
+                    miNodo.appendChild(miBoton);
+                    DOMcarrito.appendChild(miNodo);
+                });
+                // Renderizamos el precio total en el HTML
+                DOMtotal.textContent = calcularTotal();
+            }
+
+            /**
+            * Evento para borrar un elemento del carrito
+            */
+            function borrarItemCarrito(evento) {
+                // Obtenemos el producto ID que hay en el boton pulsado
+                const id = evento.target.dataset.item;
+                // Borramos todos los productos
+                carrito = carrito.filter((carritoId) => {
+                    return carritoId !== id;
+                });
+                // volvemos a renderizar
+                renderizarCarrito();
+                // Actualizamos el LocalStorage
+                guardarCarritoEnLocalStorage();
+
+            }
+
+            /**
+             * Calcula el precio total teniendo en cuenta los productos repetidos
+             */
+            function calcularTotal() {
+                // Recorremos el array del carrito
+                return carrito.reduce((total, item) => {
+                    // De cada elemento obtenemos su precio
+                    const miItem = baseDeDatos.filter((itemBaseDatos) => {
+                        return itemBaseDatos.id === parseInt(item);
+                    });
+                    // Los sumamos al total
+                    return total + miItem[0].precio;
+                }, 0).toFixed(2);
+            }
+
+            /**
+            * Varia el carrito y vuelve a dibujarlo
+            */
+            function vaciarCarrito() {
+                // Limpiamos los productos guardados
+                carrito = [];
+                // Renderizamos los cambios
+                renderizarCarrito();
+                // Borra LocalStorage
+                localStorage.clear();
+
+            }
+
+
+            function guardarCarritoEnLocalStorage () {
+                miLocalStorage.setItem('carrito', JSON.stringify(carrito));
+            }
+
+            function cargarCarritoDeLocalStorage () {
+                // ¿Existe un carrito previo guardado en LocalStorage?
+                if (miLocalStorage.getItem('carrito') !== null) {
+                    // Carga la información
+                    carrito = JSON.parse(miLocalStorage.getItem('carrito'));
+                }
+            }
+
+            // Eventos
+            DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+
+            // Inicio
+            cargarCarritoDeLocalStorage();
+            renderizarProductos();
+            renderizarCarrito();
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                  </svg></h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>&#36;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+               
+                
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
